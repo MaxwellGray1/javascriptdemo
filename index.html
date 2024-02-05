@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dingchen | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">                    
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <h1>Give me more Korean skincare</h1>
+    <h2>GIVE ME BOOTY OF JOSEON</h2>
+    <p>Click <a href="https://beautyofjoseon.com/" target="_blank" onclick="alert('Warning! You are receiving a virus! Of booty!')">here</a> to totally not buy me things!!</p>
+    <h2>Hmmmm</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='Do you feel bonita?'">Don't click meee</button>
+    <p id="change-text">Let's make you bonitaaaa</p>
+    <h2>THIS IS THE DAY YOU WILL DIE</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">Click at your own reeeaisczeqckueeai</button>
+    <p id="date"></p>
+
+    <h2>Small children</h2>
+    <p>Give me samples</p>
+    <button onclick="pFun()">Lick</button>
+    <p id="p-fun"></p>
+
+    <h2>I hate Sephora 10 year olds</h2>
+    <button onclick="askName()">Click here to dispose of one of them</button>
+    <p id="ask-name"></p>
+
+    <h2>How do we dispose of Sephora children?</h2>
+    <button onclick="askQuestion()">Click to know!</button>
+    <p id="ask-question"></p>
+    <script src="script.js"></script>
+    <script>
+        //alert("Give me Leneige to pass  :)");
+        //alert("I said, \nGive me LENEIGEEEEEE UGH :(");
+
+        function pFun() {
+            document.getElementById('p-fun').innerHTML=('Boooooooooo get in my van');
+            document.getElementById('p-fun').style.fontSize='40px';
+            document.getElementById('p-fun').style.color='pink';
+            document.getElementById('p-fun').style.textAlign='center';
+        }
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('Type name', 'CONFIRM')
+            if (name=='') {
+                alert('Please try again')
+            } else {
+                nameReturn.innerHTML = 'Thank you for supporting us ' + name + '! Want to dispose another?';
+            }
+        }
+    </script>
+</body>
+</html>
